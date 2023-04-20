@@ -24,5 +24,12 @@ button.addEventListener('click',(e) => {
 		.then (data => {
 			console.log(data)
 			console.log(dire)	
+			if (data.respcode=="200") {
+				var direccion = 'front/portal.html?token='+data.conexion;
+        		window.location = direccion;
+			} else {
+				const falla = document.getElementById('falla');
+				falla.style.visibility = "visible"
+			}
 		})
 })
