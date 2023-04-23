@@ -41,7 +41,7 @@ else
             echo $resp;
         }
     else {
-        $respuesta = array("respcode"=>"400", "razon"=>"password incorrecta");
+        $respuesta = array("respcode"=>"401", "razon"=>"password incorrecta");
         $resp=json_encode($respuesta);
         echo $resp;
         }

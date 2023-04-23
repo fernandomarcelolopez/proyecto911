@@ -27,7 +27,18 @@ button.addEventListener('click',(e) => {
 			if (data.respcode=="200") {
 				var direccion = 'front/portal.html?token='+data.conexion;
         		window.location = direccion;
-			} else {
+			} 
+			else if (data.respcode=="400")  {
+				const falla = document.getElementById('falla');
+				falla.style.visibility = "visible";
+				falla.innerText = "Usuario inexistente"
+			}
+			else if (data.respcode=="401")  {
+				const falla = document.getElementById('falla');
+				falla.style.visibility = "visible"
+				falla.innerText = "Contraseña invalida"
+			}
+			else  {
 				const falla = document.getElementById('falla');
 				falla.style.visibility = "visible"
 			}
