@@ -1,8 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(../img/fondo.png) no-repeat center top;
-    background-size: cover;
+    background: url(../img/fondo.png) repeat;
+    background-size: 30%;
     font-family: sans-serif;
     height: 100vh;
   }
@@ -10,7 +10,7 @@ body {
   .login-box {
     width: 320px;
     height: 420px;
-    background: gray;
+    background: #964369;
     color: #fff;
     top: 50%;
     left: 50%;
@@ -18,7 +18,7 @@ body {
     transform: translate(-50%, -50%);
     box-sizing: border-box;
     padding: 70px 30px;
-    border: 3px solid #000;
+    border: 3px solid #3B011A;
     border-radius: 5px;
   }
 
@@ -44,7 +44,7 @@ body {
     padding: 0;
     text-align: center;
     font-size: 22px;
-    color: black;
+    color: #3B011A;
     visibility: hidden;
   }
 
@@ -73,19 +73,19 @@ body {
     font-size: 16px;
   }
   
-  .login-box input[type="submit"] {
+  .login-box input[type="button"] {
     border: none;
     outline: none;
     height: 40px;
-    background: #b80f22;
-    color: yellow;
+    background: #92612D;
+    color: #FFF;
     font-size: 18px;
     border-radius: 20px;
   }
   
-  .login-box input[type="submit"]:hover {
+  .login-box input[type="button"]:hover {
     cursor: pointer;
-    background: #ffc107;
+    background: #b48350;
     color: #fff;
   }
   
@@ -105,7 +105,7 @@ body {
   .footer {
     width: 500px;
     height: 70px;
-    background: gray;
+    background: #964369;
     color: #fff;
     top: 93%;
     left: 50%;
@@ -113,7 +113,7 @@ body {
     transform: translate(-50%, -50%);
     box-sizing: border-box;
     padding: 10px 30px;
-    border: 3px solid #000;
+    border: 3px solid #3B011A;
     border-radius: 5px;
   }
   .footer a {
