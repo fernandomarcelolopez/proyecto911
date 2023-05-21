@@ -25,7 +25,7 @@ button.addEventListener('click',(e) => {
 			console.log(data)
 			console.log(dire)	
 			if (data.respcode=="200") {
-				var direccion = 'front/portal.html?token='+data.conexion;
+				var direccion = 'front/home.html?token='+data.conexion;
         		window.location = direccion;
 			} 
 			else if (data.respcode=="400")  {

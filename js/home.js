@@ -12,11 +12,11 @@ function obtenerValorParametro(sParametroNombre) {
 
 const token = obtenerValorParametro("token");  
 console.log(token);
-history.pushState(null, "", "portal.html");
+history.pushState(null, "", "home");
 
 home.addEventListener('click',(e) => {
     e.preventDefault()
-    var direccion = '../front/portal.html?token='+token;
+    var direccion = '../front/home.html?token='+token;
     window.location = direccion;
 })
 admin.addEventListener('click',(e) => {
